@@ -17,10 +17,17 @@ jobs:
           REACT_APP_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.REACT_APP_FIREBASE_MESSAGING_SENDER_ID }}
           REACT_APP_FIREBASE_APP_ID: ${{ secrets.REACT_APP_FIREBASE_APP_ID }}
           REACT_APP_FIREBASE_MEASUREMENT_ID: ${{ secrets.REACT_APP_FIREBASE_MEASUREMENT_ID }}
+          TESTING_DOES_THIS_WORK: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm run build
+      - run: | 
+          echo ${#REACT_APP_FIREBASE_API_KEY}
+          echo ${#TESTING_DOES_THIS_WORK}
+
+          
+
        
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
