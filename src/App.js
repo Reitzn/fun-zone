@@ -41,6 +41,7 @@ export default function App() {
 
   return (
     <div id="main">
+      <h1>Hello World.</h1>
       <div>Currently logged in as: { currentUser?.email } </div>
 
       <div id="fields">
