@@ -1,5 +1,5 @@
-import React, { useState, useRef } from "react";
-import { Button, Modal, Form } from "react-bootstrap";
+import React from "react";
+import { Button } from "react-bootstrap";
 import { logout } from "../../firebase";
 import { Link } from "react-router-dom";
 
