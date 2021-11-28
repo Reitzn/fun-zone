@@ -2,7 +2,7 @@ import React from 'react'
 import { useAuth } from '../firebase'
 
 
-export default function About() {
+export default function Profile() {
     const currentUser = useAuth();
     return (
         <div>

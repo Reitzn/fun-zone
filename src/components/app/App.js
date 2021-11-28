@@ -1,27 +1,31 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
 
-// Pages 
+// Pages
 import Home from "../../pages/Home";
-import About from '../../pages/About';
+import ContactMe from "../../pages/ContactMe";
 import Resume from "../../pages/Resume";
-import Profile from '../../pages/Profile'
+import Profile from "../../pages/Profile";
+import PageNotFound from "../../pages/PageNotFound";
+
 
 export default function App() {
   return (
-    <>
-      <React.StrictMode>
-        <Router>
-          <Navbar />
-          <Routes>
+    <React.StrictMode>
+      <Router>
+        <Navbar />
+        <div className="page">
+          <Routes className="app">
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<ContactMe />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/*" element={<PageNotFound />} />
           </Routes>
-        </Router>
-      </React.StrictMode>
-    </>
+        </div>
+      </Router>
+    </React.StrictMode>
   );
 }

@@ -1,3 +1,4 @@
-.App{
-    padding-left: 15px;
+/* Add mobile breakpoints, looks like crap mobile.  */
+.page {
+    margin: 15px 120px;
 }
