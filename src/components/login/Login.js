@@ -24,6 +24,15 @@ export default function Login() {
     navigate("../profile", { replace: true });
   }
 
+  // async function handleForgotPassword() {
+  //   try {
+  //     await resetPassword(emailRef.current.value);
+  //   } catch {
+  //     alert("Error!");
+  //   }
+  //   handleClose();
+  // }
+
   const signinForm = (
     <Form>
       <Form.Group className="mb-3" controlId="formGroupEmail">
@@ -33,6 +42,7 @@ export default function Login() {
       <Form.Group className="mb-3" controlId="formGroupPassword">
         <Form.Label>Password</Form.Label>
         <Form.Control type="password" ref={passwordRef} placeholder="Password" />
+        <button>Forgot Password?</button>
       </Form.Group>
     </Form>
   );

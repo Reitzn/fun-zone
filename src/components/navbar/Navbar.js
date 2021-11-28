@@ -26,8 +26,8 @@ export default function Header() {
               <Nav.Link as={Link} to="/resume">
                 Resume
               </Nav.Link>
-              <Nav.Link as={Link} to="/about">
-                About
+              <Nav.Link as={Link} to="/contact">
+                Contact Me
               </Nav.Link>
               {currentUser ? (
               <Nav.Link as={Link} to="/profile">
