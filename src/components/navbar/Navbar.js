@@ -39,11 +39,11 @@ export default function Header() {
             <Nav className="justify-content-end">
               {!currentUser ? <Login /> : null}
               {!currentUser ? <SignUp /> : null}
-              {currentUser ? (
+              {/* {currentUser ? (
                 <Navbar.Text>
                   Login in as: <a as={Link} to="/profile"href="#">{currentUser.email}</a>
                 </Navbar.Text>
-              ) : null}
+              ) : null} */}
               {currentUser ? <LogOut /> : null}
             </Nav>
           </Navbar.Collapse>
