@@ -42,7 +42,6 @@ export default function Login() {
       <Form.Group className="mb-3" controlId="formGroupPassword">
         <Form.Label>Password</Form.Label>
         <Form.Control type="password" ref={passwordRef} placeholder="Password" />
-        <button>Forgot Password?</button>
       </Form.Group>
     </Form>
   );
@@ -50,7 +49,7 @@ export default function Login() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary" onClick={handleShow} style={{ margin: '0 5px' }}>
         Login
       </Button>
 

@@ -12,13 +12,14 @@ export default function Header() {
 
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand="lg">
+      {/* ToDo: Get it to collapse on selected button */}
+      <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
         <Container>
           <Navbar.Brand as={Link} to="/">
             Nick Reitz
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/">
                 Home
@@ -30,14 +31,19 @@ export default function Header() {
                 Contact Me
               </Nav.Link>
               {currentUser ? (
-              <Nav.Link as={Link} to="/profile">
-                Profile
-              </Nav.Link>
+                <Nav.Link as={Link} to="/profile">
+                  Profile
+                </Nav.Link>
               ) : null}
             </Nav>
             <Nav className="justify-content-end">
               {!currentUser ? <Login /> : null}
               {!currentUser ? <SignUp /> : null}
+              {/* {currentUser ? (
+                <Navbar.Text>
+                  Login in as: <a as={Link} to="/profile"href="#">{currentUser.email}</a>
+                </Navbar.Text>
+              ) : null} */}
               {currentUser ? <LogOut /> : null}
             </Nav>
           </Navbar.Collapse>
