@@ -15,7 +15,7 @@ export default function LogOut() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleLogout} as={Link} to="/">
+      <Button variant="primary" onClick={handleLogout} as={Link} to="/" style={{ margin: '0 5px' }}>
         Log Out
       </Button>
     </>

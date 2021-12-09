@@ -42,7 +42,7 @@ export default function SignUp() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary" onClick={handleShow} style={{ margin: '0 5px' }}>
         Sign Up
       </Button>
 
