@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { Button, Modal, Form, Alert } from "react-bootstrap";
 import { login } from "../../firebase";
 import { useNavigate } from "react-router-dom";
+import "./Login.css";
 
 export default function Login() {
   const [show, setShow] = useState(false);
@@ -36,9 +37,9 @@ export default function Login() {
   return (
     <>
       <Button
+        className='login-button'
         variant="primary"
         onClick={handleShow}
-        style={{ margin: "0 5px" }}
       >
         Login
       </Button>

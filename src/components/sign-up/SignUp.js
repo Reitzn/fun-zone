@@ -2,14 +2,15 @@ import React, { useState, useRef } from "react";
 import { Button, Modal, Form, Alert } from "react-bootstrap";
 import { signup } from "../../firebase";
 import { useNavigate } from "react-router-dom";
+import "./SignUp.css";
 
 export default function SignUp() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => {
     setShow(false);
-    setError('');
-  }
+    setError("");
+  };
   const handleShow = () => setShow(true);
 
   const [loading, setLoading] = useState(false);
@@ -40,11 +41,7 @@ export default function SignUp() {
 
   return (
     <>
-      <Button
-        variant="primary"
-        onClick={handleShow}
-        style={{ margin: "0 5px" }}
-      >
+      <Button className="sign-up-button" variant="primary" onClick={handleShow}>
         Sign Up
       </Button>
 

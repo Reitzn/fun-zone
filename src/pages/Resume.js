@@ -6,9 +6,9 @@ export default function Resume() {
       <h1>My Resume</h1>
       <p>It ain't much, but it's honest work.</p>
 
-      <div class="content">
-        <ul class="list-group">
-          <li class="list-group-item">
+      <div className="content">
+        <ul className="list-group">
+          <li className="list-group-item">
             <h2>Software Engineer</h2>
             <h4>Randstad Technologies</h4>
             <ul>
@@ -17,7 +17,7 @@ export default function Resume() {
               </li>
             </ul>
           </li>
-          <li class="list-group-item">
+          <li className="list-group-item">
             <h2>Software Developer</h2>
             <h4>Auto-Owners Insurance</h4>
             <ul>
@@ -50,7 +50,7 @@ export default function Resume() {
               </li>
             </ul>
           </li>
-          <li class="list-group-item">
+          <li className="list-group-item">
             <h2>Audit Tech</h2>
             <h4>Dow Chemical</h4>
             <ul>

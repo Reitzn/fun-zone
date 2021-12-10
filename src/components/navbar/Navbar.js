@@ -5,14 +5,14 @@ import SignUp from "../sign-up/SignUp";
 import Login from "../login/Login";
 import LogOut from "../log-out/LogOut";
 
-import { useAuth } from "../../firebase";
+import { useAuth } from "../../hooks/useAuth";
 
 export default function Header() {
   const currentUser = useAuth();
 
   return (
     <>
-      {/* ToDo: Get it to collapse on selected button */}
+      {/* ToDo: Get mobile to collapse on selected tab */}
       <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
         <Container>
           <Navbar.Brand as={Link} to="/">
