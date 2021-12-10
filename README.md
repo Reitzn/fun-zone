@@ -4,8 +4,8 @@ This project was started for the purpose of helping me learn and practice develo
 
 ## The Set Up
 
-- Bootstraped from create-react-app
-- Using react-router-dom v6 for navigation
+- Bootstraped from [create-react-app](https://create-react-app.dev/)
+- Using [react-router-dom](https://reactrouter.com/) v6 for navigation
 - Firebase Authentication for user prfiles 
 - Firebase Hosting for web hosting 
 - GitHub Actions for building and deploying 
@@ -18,5 +18,5 @@ There is another GitHub Action that runs when the PR is merged into 'main'. This
 
 ## UI 
 
-- Using react-bootstrap for some components
+- Using [react-bootstrap](https://react-bootstrap.github.io/) for some components
 
