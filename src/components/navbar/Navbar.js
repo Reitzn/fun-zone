@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <>
-      {/* ToDo: Get mobile to collapse on selected tab */}
+      {/* ToDo: Get mobile to collapse on selected buttons (Loging in / out) */}
       <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
         <Container>
           <Navbar.Brand as={Link} to="/">
