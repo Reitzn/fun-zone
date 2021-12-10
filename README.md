@@ -6,7 +6,7 @@ This project was started for the purpose of helping me learn and practice develo
 
 - Bootstraped from [create-react-app](https://create-react-app.dev/)
 - Using [react-router-dom](https://reactrouter.com/) v6 for navigation
-- Firebase Authentication for user prfiles 
+- Firebase Authentication for user profiles 
 - Firebase Hosting for web hosting 
 - GitHub Actions for building and deploying 
 
