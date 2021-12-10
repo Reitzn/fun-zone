@@ -22,7 +22,7 @@ export default function Home() {
                 graduate degree in Computer Science at Grand Valley State
                 University. I have a bachelor’s in Computer Information Systems
                 form Northwood University and have a few years of enterprise
-                level software development expearnce.
+                level software development experience.
               </p>
 
               <p>
@@ -34,7 +34,7 @@ export default function Home() {
 
               <p>
                 I love to travel and take photos when I’m not working. One of my
-                goals is to visit every national park. While not traviling or
+                goals is to visit every national park. While not traveling or
                 taking photos, I enjoy programing. Check out some of my work on
                 my{" "}
                 <a href="https://github.com/Reitzn" target="_blank" rel="noreferrer">
