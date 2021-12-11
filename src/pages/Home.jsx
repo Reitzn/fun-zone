@@ -1,5 +1,7 @@
 import React from "react";
 import nickImg from "../img/Nick-Reitz.jpeg";
+import "./Home.css"
+
 export default function Home() {
   return (
     <>
