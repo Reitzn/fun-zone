@@ -1,0 +1,33 @@
+{
+  "name": "Nick Reitz",
+  "banner": {
+    "profileImageUrl": "NickReitz.jpg",
+    "profileImageAltText": "Image of me",
+    "title": "About Me",
+    "paragraphs":[
+        "Hello! My name is Nick Reitz. I am currently working on my graduate degree in Computer Science at Grand Valley State University. I have a bachelor’s in Computer Information Systems form Northwood University and have a few years of enterprise level software development experience.",
+        "I currently work as a Software Engineer building out Adobe Experience Manager components. Previously, I worked as a Software Developer for Auto Owners Insurance building out ECM solutions.",
+        "I love to travel and take photos when I’m not working. One of my goals is to visit every national park. While not traveling or taking photos, I enjoy programing."
+    ]
+  },
+  "socialMedia": {
+    "title": "Check me out on social media",
+    "links": [
+      {
+        "linkAltText": "Link to my Instagram account",
+        "linkUrl": "https://www.instagram.com/rockreitz/",
+        "imageUrl": "Instagram.png"
+      },
+      {
+        "linkAltText": "Link to my LinkedIn account",
+        "linkUrl": "https://www.linkedin.com/in/nicholas-reitz-3a232373/",
+        "imageUrl": "LinkedIn.png"
+      },
+      {
+        "linkAltText": "Link to my GitHub account",
+        "linkUrl": "https://github.com/Reitzn",
+        "imageUrl": "GitHub.png"
+      }
+    ]
+  }
+}

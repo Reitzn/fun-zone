@@ -50,7 +50,7 @@ export default function Login() {
         </Modal.Header>
         <Modal.Body>
           {error && <Alert variant='danger'>{error}</Alert>}
-          <Form>
+          <Form name='login' type='form'>
             <Form.Group className="mb-3" controlId="formGroupEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
@@ -73,7 +73,7 @@ export default function Login() {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" disabled={loading} onClick={handleLogin}>
+          <Button data-testid="login-button" variant="primary" disabled={loading} onClick={handleLogin}>
             Login
           </Button>
         </Modal.Footer>
