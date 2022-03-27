@@ -1,8 +1,0 @@
-.sign-up-button {
-    margin: 5px 0;
-}
-@media screen and (min-width: 992px) {
-    .sign-up-button  {
-        margin: 0 5px;
-    }
-}

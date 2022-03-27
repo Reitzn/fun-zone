@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 
 // Slick Slider CSS
 import "slick-carousel/slick/slick.css";
@@ -12,11 +12,13 @@ import Home from "../../pages/Home";
 import ContactMe from "../../pages/ContactMe";
 import Resume from "../../pages/Resume";
 import Profile from "../../pages/Profile";
+import Users from "../../pages/Users";
 import PageNotFound from "../../pages/PageNotFound";
 
 // Pages Data
 import HomeData from "../../pages-data/Home.json";
 import ResumeData from "../../pages-data/Resume.json";
+import UsersData from "../../pages-data/Users.json";
 
 
 export default function App() {
@@ -30,6 +32,7 @@ export default function App() {
             <Route path="/contact" element={<ContactMe />} />
             <Route path="/resume" element={<Resume {...ResumeData} />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/users" element={<Users {...UsersData} />} />
             <Route path="/*" element={<PageNotFound />} />
           </Routes>
         </div>

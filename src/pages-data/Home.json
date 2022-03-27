@@ -27,6 +27,11 @@
         "linkAltText": "Link to my GitHub account",
         "linkUrl": "https://github.com/Reitzn",
         "imageUrl": "GitHub.png"
+      },
+      {
+        "linkAltText": "Link to my Medium account",
+        "linkUrl": "#",
+        "imageUrl": "Medium.png"
       }
     ]
   }

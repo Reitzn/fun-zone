@@ -1,18 +1,15 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import SignUp from "../sign-up/SignUp";
-import Login from "../login/Login";
-import LogOut from "../log-out/LogOut";
+import SignUp from "./sign-up/SignUp";
+import Login from "./login/Login";
+import LogOut from "./log-out/LogOut";
 
 import { useAuth } from "../../hooks/useAuth";
 
 export default function Header() {
-
   const currentUser = useAuth();
 
-  console.log(currentUser);
-  
   return (
     <>
       {/* ToDo: Get mobile to collapse on selected buttons (Loging in / out) */}
@@ -34,9 +31,14 @@ export default function Header() {
                 Contact Me
               </Nav.Link>
               {currentUser ? (
-                <Nav.Link eventKey="4" as={Link} to="/profile">
-                  Profile
-                </Nav.Link>
+                <>
+                  <Nav.Link eventKey="4" as={Link} to="/profile">
+                    Profile
+                  </Nav.Link>
+                  <Nav.Link eventKey="5" as={Link} to="/users">
+                    Users
+                  </Nav.Link>
+                </>
               ) : null}
             </Nav>
             <Nav className="justify-content-end">

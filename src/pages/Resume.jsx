@@ -1,5 +1,5 @@
 import React from "react";
-import ResumeCarousel from "../components/resume-carousel/ResumeCarousel";
+import ResumeCarousel from "../components/home/resume-carousel/ResumeCarousel";
 
 export default function Resume(props) {
   const { title, subtitle, jobs, education } = props;

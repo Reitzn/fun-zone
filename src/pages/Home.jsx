@@ -1,6 +1,6 @@
 import React from "react";
-import Banner from "../components/banner/Banner";
-import MediaLinks from "../components/media-links/MediaLinks";
+import Banner from "../components/home/banner/Banner";
+import MediaLinks from "../components/home/media-links/MediaLinks";
 
 export default function Home(props) {
 
