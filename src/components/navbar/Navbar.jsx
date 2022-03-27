@@ -8,8 +8,11 @@ import LogOut from "../log-out/LogOut";
 import { useAuth } from "../../hooks/useAuth";
 
 export default function Header() {
+
   const currentUser = useAuth();
 
+  console.log(currentUser);
+  
   return (
     <>
       {/* ToDo: Get mobile to collapse on selected buttons (Loging in / out) */}
@@ -39,11 +42,6 @@ export default function Header() {
             <Nav className="justify-content-end">
               {!currentUser ? <Login /> : null}
               {!currentUser ? <SignUp /> : null}
-              {/* {currentUser ? (
-                <Navbar.Text>
-                  Login in as: <a as={Link} to="/profile"href="#">{currentUser.email}</a>
-                </Navbar.Text>
-              ) : null} */}
               {currentUser ? <LogOut /> : null}
             </Nav>
           </Navbar.Collapse>

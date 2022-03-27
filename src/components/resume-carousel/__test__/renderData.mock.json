@@ -1,0 +1,36 @@
+{
+    "jobs": [
+    {
+      "jobTitle": "Software Engineer",
+      "companyName": "Randstad Technologies",
+      "jobTasks": ["Build React Componets for AEM(Adobe Experance Manager)"]
+    },
+    {
+      "jobTitle": "Software Developer",
+      "companyName": "Auto-Owners Insurance",
+      "jobTasks": [
+        "Designed, developed, and deployed case management systems for various departments in an agile environment",
+        "Front end JavaScript and back end Java development",
+        "Migrated documents and cases from legacy systems to new case management systems",
+        "Developed and maintained SQL Server Reporting Services reports",
+        "Implemented application monitoring tools to increase visibility and performance monitoring to web-based applications"
+      ]
+    },
+    {
+      "jobTitle": "IT Co-op",
+      "companyName": "The Dow chemical company",
+      "jobTasks": [
+        "Managed and developed the Auditing Department’s Intranet and SharePoint sites and content",
+        "Developed scripts for automating document information for records retention",
+        "Developed web applications and forms for generating various audit reports "
+      ]
+    },
+    {
+      "jobTitle": "Software Quality Assurance Intern",
+      "companyName": "School Zone Publishing",
+      "jobTasks": [
+        "Software Quality Assurance Intern for educational based video games"
+      ]
+    }
+  ]
+}

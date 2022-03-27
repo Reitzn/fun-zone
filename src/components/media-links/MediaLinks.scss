@@ -1,0 +1,17 @@
+.media-links-component {
+  &__image {
+    width: 100%;
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__row {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__title {
+    padding-top: 15px;
+  }
+}
