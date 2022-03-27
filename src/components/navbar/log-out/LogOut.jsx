@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import { logout } from "../../firebase";
+import { logout } from "../../../firebase";
 import { Link } from "react-router-dom";
 
 export default function LogOut() {

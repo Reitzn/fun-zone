@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import { Button, Modal, Form, Alert } from "react-bootstrap";
-import { signup } from "../../firebase";
+import { signup } from "../../../firebase";
 import { useNavigate } from "react-router-dom";
-import "./SignUp.css";
+import "./SignUp.scss";
 
 export default function SignUp() {
   const [show, setShow] = useState(false);
