@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Form, Row, Col, Button } from "react-bootstrap";
+import React from "react";
+import { Form, Button } from "react-bootstrap";
 import { useAuth } from "../../hooks/useAuth";
 
 export default function UpdateProfileInformation() {

@@ -22,7 +22,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   async function handleLogin() {
-    let response;
+
     try {
       setError("");
       setLoading(true);
