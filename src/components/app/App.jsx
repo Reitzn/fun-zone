@@ -3,13 +3,14 @@ import Navbar from "../navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.scss";
 
+// Global CSS Imports 
 // Slick Slider CSS
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Pages
 import Home from "../../pages/Home";
-import ContactMe from "../../pages/ContactMe";
+import Contact from "../../pages/Contact";
 import Resume from "../../pages/Resume";
 import Profile from "../../pages/Profile";
 import Users from "../../pages/Users";
@@ -29,7 +30,7 @@ export default function App() {
         <div className="page">
           <Routes className="app">
             <Route path="/" element={<Home {...HomeData} />} />
-            <Route path="/contact" element={<ContactMe />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/resume" element={<Resume {...ResumeData} />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/users" element={<Users {...UsersData} />} />

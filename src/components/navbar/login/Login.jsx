@@ -9,10 +9,10 @@ export default function Login() {
 
   const handleClose = () => {
     setShow(false);
-    setError('');
-  }
+    setError("");
+  };
   const handleShow = () => setShow(true);
-  
+
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -22,25 +22,31 @@ export default function Login() {
   const navigate = useNavigate();
 
   async function handleLogin() {
+    let response;
     try {
       setError("");
       setLoading(true);
       await login(emailRef.current.value, passwordRef.current.value);
       handleClose();
       navigate("../profile", { replace: true });
-    } catch {
-      setError("Login Error");
+    } catch (error) {
+      
+      console.log(error.message);
+      
+        if (error.message.includes('auth/invalid-email')) {
+          setError("Invalid Email");
+        } else if (error.message.includes('auth/wrong-password')) {
+          setError("Wrong Password");
+        } else {
+          setError("Login Error");
+        }
     }
     setLoading(false);
   }
 
   return (
     <>
-      <Button
-        className='login-button'
-        variant="primary"
-        onClick={handleShow}
-      >
+      <Button className="login-button" variant="primary" onClick={handleShow}>
         Login
       </Button>
 
@@ -49,8 +55,8 @@ export default function Login() {
           <Modal.Title>Login</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {error && <Alert variant='danger'>{error}</Alert>}
-          <Form name='login' type='form'>
+          {error && <Alert variant="danger">{error}</Alert>}
+          <Form name="login" type="form">
             <Form.Group className="mb-3" controlId="formGroupEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
@@ -73,7 +79,12 @@ export default function Login() {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button data-testid="login-button" variant="primary" disabled={loading} onClick={handleLogin}>
+          <Button
+            data-testid="login-button"
+            variant="primary"
+            disabled={loading}
+            onClick={handleLogin}
+          >
             Login
           </Button>
         </Modal.Footer>
