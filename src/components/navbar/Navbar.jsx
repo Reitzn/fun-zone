@@ -10,6 +10,8 @@ import { useAuth } from "../../hooks/useAuth";
 export default function Header() {
   const currentUser = useAuth();
 
+  console.log(currentUser);
+
   return (
     <>
       {/* ToDo: Get mobile to collapse on selected buttons (Loging in / out) */}

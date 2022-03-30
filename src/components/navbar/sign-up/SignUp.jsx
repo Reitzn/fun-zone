@@ -30,8 +30,18 @@ export default function SignUp() {
         await signup(emailRef.current.value, passwordRef.current.value);
         handleClose();
         navigate("../profile", { replace: true });
-      } catch {
-        setError("Something Went Wrong");
+      } catch (error) {
+        console.log(error.message);
+
+        if (error.message.includes("auth/invalid-email")) {
+          setError("Invalid Email");
+        } else if (error.message.includes("auth/weak-password")) {
+          setError("Password should be at least 6 characters");
+        } else if (error.message.includes("auth/email-already-in-use")) {
+          setError("This email already has an account");
+        } else {
+          setError("Something Went Wrong ");
+        }
       }
       setLoading(false);
     } else {
