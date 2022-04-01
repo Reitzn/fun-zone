@@ -3,62 +3,75 @@
     {
       "userName": "Nick",
       "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
       "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
     {
       "userName": "Nick",
       "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
       "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
     {
       "userName": "Nick",
       "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
       "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
     {
       "userName": "Nick",
       "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
       "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
     {
       "userName": "Nick",
       "profileImage": "https://via.placeholder.com/286x180",
-      "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-      "userName": "Nick",
-      "profileImage": "https://via.placeholder.com/286x180"
-    },
-    {
-      "userName": "Nick",
-      "profileImage": "https://via.placeholder.com/286x180"
-    },
-    {
-      "userName": "Nick",
-      "profileImage": "https://via.placeholder.com/286x180"
-    },
-    {
-      "userName": "Nick",
-      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
       "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
     {
       "userName": "Nick",
       "profileImage": "https://via.placeholder.com/286x180",
-      "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-      "userName": "Nick",
-      "profileImage": "https://via.placeholder.com/286x180"
+      "profileImageAltText": "Example of a users profile image"
     },
     {
       "userName": "Nick",
       "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image"
+    },
+    {
+      "userName": "Nick",
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image"
+    },
+    {
+      "userName": "Nick",
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
       "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
     {
       "userName": "Nick",
-      "profileImage": "https://via.placeholder.com/286x180"
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
+      "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "userName": "Nick",
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image"
+    },
+    {
+      "userName": "Nick",
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
+      "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "userName": "Nick",
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image"
     }
   ]
 }

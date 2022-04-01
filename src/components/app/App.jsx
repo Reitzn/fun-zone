@@ -3,7 +3,7 @@ import Navbar from "../navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.scss";
 
-// Global CSS Imports 
+// Global CSS Imports
 // Slick Slider CSS
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,23 +21,24 @@ import HomeData from "../../pages-data/Home.json";
 import ResumeData from "../../pages-data/Resume.json";
 import UsersData from "../../pages-data/Users.json";
 
-
 export default function App() {
   return (
-    <React.StrictMode>
-      <Router>
-        <Navbar />
-        <div className="page">
-          <Routes className="app">
-            <Route path="/" element={<Home {...HomeData} />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/resume" element={<Resume {...ResumeData} />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/users" element={<Users {...UsersData} />} />
-            <Route path="/*" element={<PageNotFound />} />
-          </Routes>
-        </div>
-      </Router>
-    </React.StrictMode>
+    <main>
+      <React.StrictMode>
+        <Router>
+          <Navbar />
+          <div className="page">
+            <Routes className="app">
+              <Route path="/" element={<Home {...HomeData} />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/resume" element={<Resume {...ResumeData} />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/users" element={<Users {...UsersData} />} />
+              <Route path="/*" element={<PageNotFound />} />
+            </Routes>
+          </div>
+        </Router>
+      </React.StrictMode>
+    </main>
   );
 }

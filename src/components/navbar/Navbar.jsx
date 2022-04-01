@@ -10,12 +10,10 @@ import { useAuth } from "../../hooks/useAuth";
 export default function Header() {
   const currentUser = useAuth();
 
-  console.log(currentUser);
-
   return (
     <>
       {/* ToDo: Get mobile to collapse on selected buttons (Loging in / out) */}
-      <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
+      <Navbar role="navigation" collapseOnSelect bg="dark" variant="dark" expand="lg">
         <Container>
           <Navbar.Brand as={Link} to="/">
             Nick Reitz
@@ -32,7 +30,7 @@ export default function Header() {
               <Nav.Link eventKey="3" as={Link} to="/contact">
                 Contact Me
               </Nav.Link>
-              {currentUser ? (
+              {currentUser?.uid ? (
                 <>
                   <Nav.Link eventKey="4" as={Link} to="/profile">
                     Profile
@@ -44,9 +42,9 @@ export default function Header() {
               ) : null}
             </Nav>
             <Nav className="justify-content-end">
-              {!currentUser ? <Login /> : null}
-              {!currentUser ? <SignUp /> : null}
-              {currentUser ? <LogOut /> : null}
+              {!currentUser?.uid ? <Login /> : null}
+              {!currentUser?.uid ? <SignUp /> : null}
+              {currentUser?.uid ? <LogOut /> : null}
             </Nav>
           </Navbar.Collapse>
         </Container>

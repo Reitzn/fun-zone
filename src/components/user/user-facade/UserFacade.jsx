@@ -10,7 +10,8 @@ export default function UserFacade(props) {
     <div className="user-facade">
       <div className="row">
         {users?.map((user) => (
-          <div className="user-facade__col col">
+          // col-sm-12 col-md-4 col-lg-3
+          <div className="user-facade__col col-sm-6 col-md-4 col-lg-3 d-flex aligh-items-stretch">
             <UserCard {...user} />
           </div>
         ))}

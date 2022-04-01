@@ -15,6 +15,10 @@ test("Renders the Resume Carousel with correct props", async () => {
     </Router>
   );
 
-    expect(await screen.findByText("Software Engineer")).toBeTruthy();
+    expect(await screen.findAllByText(RenderData.jobs[0].jobTitle)).toBeTruthy();
+    expect(await screen.findAllByText(RenderData.jobs[0].companyName)).toBeTruthy();
+    expect(await screen.findAllByText(RenderData.jobs[0].jobTasks[0])).toBeTruthy();
 
+    // Add useScreenSize for mobile desktip arrows on slider 
+    // Update slider to remove arrows lol
 });

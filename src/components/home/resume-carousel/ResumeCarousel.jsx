@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import JobTile from "./JobTile";
+import { Constants } from '../../../utils/Constants';
 
 import "./ResumeCarousel.scss"
 
@@ -14,6 +15,16 @@ export default function ResumeCarousel(props) {
     speed: 500,
     slidesToShow: 1.25,
     slidesToScroll: 1,
+
+    responsive: [
+      {
+      breakpoint: Constants.BREAKPOINTS.TABLET,
+
+      settings: {
+        arrows: false
+      }
+    }
+    ]
   };
 
   return (

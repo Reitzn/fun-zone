@@ -13,13 +13,14 @@ export default function Profile() {
       <h1>Welcome: {currentUser?.email}</h1>
       <div className="row">
         <div className="col">
-          <h3>Update profile information</h3>
+          <h2>Update profile information</h2>
           <UpdateProfileInformation />
         </div>
         <div className="col">
           <UserCard
-            userName={currentUser?.email}
+            userName={currentUser?.emaonil}
             profileImage="https://via.placeholder.com/286x180"
+            profileImageAltText="Example of a profile image"
             profileDescription={profileDescription}
           />
         </div>

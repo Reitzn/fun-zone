@@ -5,7 +5,13 @@
     {
       "jobTitle": "Software Engineer",
       "companyName": "Randstad Technologies",
-      "jobTasks": ["Build React Componets for AEM(Adobe Experance Manager)"]
+      "jobTasks": [
+        "Designs and develops AEM SPA React components to be used by Site Merchants and Marketing business partners",
+        "Designs user stories based on sprint objectives and Agile methods to help further break",
+        "Collaborates with the Product Owner and Scrum Master in understanding technical abilities or limitations to ensure success in our deliverables",
+        "Provides technical representation in meetings with third party vendor Criteo to help facilitate enhancements and features",
+        "Mentors and coaches team members to both align on code quality and further personal development"
+      ]
     },
     {
       "jobTitle": "Software Developer",
