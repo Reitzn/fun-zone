@@ -3,18 +3,16 @@ import Navbar from "../Navbar";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useAuth } from "../../../hooks/useAuth";
 
-// jest.mock("../../../hooks/useAuth", () => {
-//   return {
-//     useAuth: () => {
-//       return {
-//         currentUser: {}
-//       };
-//     },
-//   };
-// });
+jest.mock("../../../hooks/useAuth");
+const mockUseAuth = (data) => {
+  useAuth.mockImplementation(() => {
+    return {
+      uid: "1234",
+    };
+  });
+};
 
 test("renders unauthenticatd  Navbar, proper buttons and tabs", async () => {
- 
   render(
     <Router>
       <Navbar />
@@ -27,24 +25,23 @@ test("renders unauthenticatd  Navbar, proper buttons and tabs", async () => {
     expect(screen.getByText("Contact Me")).toBeTruthy();
     expect(screen.getByText("Login")).toBeTruthy();
     expect(screen.getByText("Sign Up")).toBeTruthy();
-
   });
 });
 
+test("renders authenticatd  Navbar, proper buttons and tabs", async () => {
+  mockUseAuth();
+  render(
+    <Router>
+      <Navbar />
+    </Router>
+  );
 
-// test("renders authenticatd  Navbar, proper buttons and tabs", async () => {
-//   render(
-//     <Router>
-//       <Navbar />
-//     </Router>
-//   );
-
-//   await waitFor(() => {
-//     expect(screen.getByText("Home")).toBeTruthy();
-//     expect(screen.getByText("Resume")).toBeTruthy();
-//     expect(screen.getByText("Contact Me")).toBeTruthy();
-//     expect(screen.getByText("Profile")).toBeTruthy();
-//     expect(screen.getByText("Users")).toBeTruthy();
-//     expect(screen.getByText("Log Out")).toBeTruthy();
-//   });
-// });
+  await waitFor(() => {
+    expect(screen.getByText("Home")).toBeTruthy();
+    expect(screen.getByText("Resume")).toBeTruthy();
+    expect(screen.getByText("Contact Me")).toBeTruthy();
+    expect(screen.getByText("Profile")).toBeTruthy();
+    expect(screen.getByText("Users")).toBeTruthy();
+    expect(screen.getByText("Log Out")).toBeTruthy();
+  });
+});

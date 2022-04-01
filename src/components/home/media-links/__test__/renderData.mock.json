@@ -1,20 +1,25 @@
-{
-  "title": "Check me out on social media",
-  "links": [
-    {
-      "linkAltText": "Link to my Instagram account",
-      "linkUrl": "https://www.instagram.com/rockreitz/",
-      "imageUrl": "Instagram.png"
-    },
-    {
-      "linkAltText": "Link to my LinkedIn account",
-      "linkUrl": "https://www.linkedin.com/in/nicholas-reitz-3a232373/",
-      "imageUrl": "LinkedIn.png"
-    },
-    {
-      "linkAltText": "Link to my GitHub account",
-      "linkUrl": "https://github.com/Reitzn",
-      "imageUrl": "GitHub.png"
-    }
-  ]
-}
+[
+  {
+    "title": "Check me out on social media",
+    "links": [
+      {
+        "linkAltText": "Link to my Instagram account",
+        "linkUrl": "https://www.instagram.com/rockreitz/",
+        "imageUrl": "Instagram.png"
+      },
+      {
+        "linkAltText": "Link to my LinkedIn account",
+        "linkUrl": "https://www.linkedin.com/in/nicholas-reitz-3a232373/",
+        "imageUrl": "LinkedIn.png"
+      },
+      {
+        "linkAltText": "Link to my GitHub account",
+        "linkUrl": "https://github.com/Reitzn",
+        "imageUrl": "GitHub.png"
+      }
+    ]
+  },
+  {
+    "title": "Check me out on social media"
+  }
+]

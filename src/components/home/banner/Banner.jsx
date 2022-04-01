@@ -7,7 +7,7 @@ export default function Banner(props) {
 
     return (
     <div className="banner-component">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
       <div className="clearfix">
         <img src={process.env.PUBLIC_URL + profileImageUrl} className="banner-component__profile-image col-md-6 float-md-end mb-3 ms-md-3" alt={profileImageAltText} />
 
