@@ -12,11 +12,11 @@ export default function Profile() {
     <div>
       <h1>Welcome: {currentUser?.email}</h1>
       <div className="row">
-        <div className="col">
+        <div className="col-sm-6">
           <h2>Update profile information</h2>
           <UpdateProfileInformation />
         </div>
-        <div className="col">
+        <div className="col d-flex justify-content-center">
           <UserCard
             userName={currentUser?.emaonil}
             profileImage="https://via.placeholder.com/286x180"

@@ -1,5 +1,10 @@
 .banner-component {
-    &__profile-image{
-        max-width: 375px;
+  &__profile-image {
+    max-width: 100%;
+
+    // Make this a cosnt instead of putting 768 in there 
+    @media screen and (min-width: 768px) {
+      max-width: 375px;
     }
+  }
 }
