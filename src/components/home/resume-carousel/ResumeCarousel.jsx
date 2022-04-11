@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import JobTile from "./JobTile";
-import { Constants } from "../../../utils/Constants";
+// import { Constants } from "../../../utils/Constants";
 
 import "./ResumeCarousel.scss";
 
