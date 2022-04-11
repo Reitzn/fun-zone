@@ -11,7 +11,7 @@ export default function JobTile(props) {
       <h3>{companyName}</h3>
       <ul>
         {jobTasks?.map((task) => (
-          <li>{task}</li>
+          <li key={task}>{task}</li>
         ))}
       </ul>
     </div>

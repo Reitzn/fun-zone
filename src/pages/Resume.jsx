@@ -9,11 +9,11 @@ export default function Resume(props) {
       <h1>{title}</h1>
       <p>{subtitle}</p>
 
-      <h2>Work Experance</h2>
-      <ResumeCarousel jobs={jobs} />
-
       <h2>Education</h2>
       <ResumeCarousel jobs={education} />
+
+      <h2>Work Experance</h2>
+      <ResumeCarousel jobs={jobs} />
     </div>
   );
 }

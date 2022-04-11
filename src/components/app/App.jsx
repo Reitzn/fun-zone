@@ -19,7 +19,7 @@ import PageNotFound from "../../pages/PageNotFound";
 // Pages Data
 import HomeData from "../../pages-data/Home.json";
 import ResumeData from "../../pages-data/Resume.json";
-import UsersData from "../../pages-data/Users.json";
+import UsersData from "../../pages-data/MOCK_DATA.json";
 
 export default function App() {
   return (

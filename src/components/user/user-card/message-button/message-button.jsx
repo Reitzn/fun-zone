@@ -1,5 +1,5 @@
-import React, { useState, useRef } from "react";
-import { Button, Modal, Form, Alert } from "react-bootstrap";
+import React, { useState } from "react";
+import { Button, Modal, Form } from "react-bootstrap";
 
 export default function MessageButton() {
   const [show, setShow] = useState(false);
@@ -12,7 +12,7 @@ export default function MessageButton() {
 
   return (
     <>
-      <Button className="login-button" variant="primary" onClick={handleShow}>
+      <Button className="message-button mt-auto align-self-start" variant="primary" onClick={handleShow}>
         Message
       </Button>
 

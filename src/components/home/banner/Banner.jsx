@@ -12,7 +12,7 @@ export default function Banner(props) {
         <img src={process.env.PUBLIC_URL + profileImageUrl} className="banner-component__profile-image col-md-6 float-md-end mb-3 ms-md-3" alt={profileImageAltText} />
 
         {paragraphs?.map((paragraph) => (
-          <p>{paragraph}</p>
+          <p key={paragraph}>{paragraph}</p>
         ))}
       </div>
     </div>

@@ -29,13 +29,13 @@ export default function Login() {
       await login(emailRef.current.value, passwordRef.current.value);
       handleClose();
       navigate("../profile", { replace: true });
-    } catch (error) {
+    } catch (er) {
       
-      console.log(error.message);
+      console.log(er.message);
       
-        if (error.message.includes('auth/invalid-email')) {
+        if (er.message.includes('auth/invalid-email')) {
           setError("Invalid Email");
-        } else if (error.message.includes('auth/wrong-password')) {
+        } else if (er.message.includes('auth/wrong-password')) {
           setError("Wrong Password");
         } else {
           setError("Login Error");
