@@ -1,65 +1,94 @@
 {
-    "users": [
-      {
-        "userName": "Nick",
-        "profileImage": "https://via.placeholder.com/286x180",
-        "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
-      },
-      {
-        "userName": "Nick",
-        "profileImage": "https://via.placeholder.com/286x180",
-        "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
-      },
-      {
-        "userName": "Nick",
-        "profileImage": "https://via.placeholder.com/286x180",
-        "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
-      },
-      {
-        "userName": "Nick",
-        "profileImage": "https://via.placeholder.com/286x180",
-        "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
-      },
-      {
-        "userName": "Nick",
-        "profileImage": "https://via.placeholder.com/286x180",
-        "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
-      },
-      {
-        "userName": "Nick",
-        "profileImage": "https://via.placeholder.com/286x180"
-      },
-      {
-        "userName": "Nick",
-        "profileImage": "https://via.placeholder.com/286x180"
-      },
-      {
-        "userName": "Nick",
-        "profileImage": "https://via.placeholder.com/286x180"
-      },
-      {
-        "userName": "Nick",
-        "profileImage": "https://via.placeholder.com/286x180",
-        "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
-      },
-      {
-        "userName": "Nick",
-        "profileImage": "https://via.placeholder.com/286x180",
-        "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
-      },
-      {
-        "userName": "Nick",
-        "profileImage": "https://via.placeholder.com/286x180"
-      },
-      {
-        "userName": "Nick",
-        "profileImage": "https://via.placeholder.com/286x180",
-        "profileDescription": "Some quick example text to build on the card title and make up the bulk of the card's content."
-      },
-      {
-        "userName": "Nick",
-        "profileImage": "https://via.placeholder.com/286x180"
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
+      "jobTitle": "Senior Editor",
+      "companyName": "McLaughlin and Sons",
+      "userName": "Mellisa Bartrop",
+      "country": "Indonesia",
+      "profileDescription": "architect dot-com users"
+    },
+    {
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
+      "jobTitle": "Budget/Accounting Analyst I",
+      "companyName": "Rogahn-Roberts",
+      "userName": "Kelsey O'Duggan",
+      "country": "Sweden",
+      "profileDescription": "strategize revolutionary users"
+    },
+    {
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
+      "jobTitle": "Database Administrator II",
+      "companyName": "Gleason Inc",
+      "userName": "Elaina Haskew",
+      "country": "Indonesia",
+      "profileDescription": "recontextualize efficient niches"
+    },
+    {
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
+      "jobTitle": "Electrical Engineer",
+      "companyName": "Purdy-O'Conner",
+      "userName": "Teodorico Linzey",
+      "country": "Brazil",
+      "profileDescription": "strategize rich functionalities"
+    },
+    {
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
+      "jobTitle": "VP Marketing",
+      "companyName": "Shields, Roob and Blanda",
+      "userName": "Windy Earey",
+      "country": "China",
+      "profileDescription": "unleash next-generation e-tailers"
+    },
+    {
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
+      "jobTitle": "Research Nurse",
+      "companyName": "O'Conner, Pacocha and Will",
+      "userName": "Pearce Ancliffe",
+      "country": "Portugal",
+      "profileDescription": "disintermediate innovative e-markets"
+    },
+    {
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
+      "jobTitle": "Marketing Assistant",
+      "companyName": "Dare-Moen",
+      "userName": "Ruthi Albisser",
+      "country": "United States",
+      "profileDescription": "visualize bleeding-edge solutions"
+    },
+    {
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
+      "jobTitle": "Research Assistant III",
+      "companyName": "Howell-Rippin",
+      "userName": "Althea Humm",
+      "country": "China",
+      "profileDescription": "redefine virtual bandwidth"
+    },
+    {
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
+      "jobTitle": "GIS Technical Architect",
+      "companyName": "McLaughlin and Sons",
+      "userName": "Broderic Maciejewski",
+      "country": "China",
+      "profileDescription": "generate global e-commerce"
+    },
+    {
+      "profileImage": "https://via.placeholder.com/286x180",
+      "profileImageAltText": "Example of a users profile image",
+      "jobTitle": "VP Sales",
+      "companyName": "Altenwerth, Renner and Stehr",
+      "userName": "Charmaine Kennford",
+      "country": "Lithuania",
+      "profileDescription": "embrace sticky e-business"
+    }
+  ]
+}

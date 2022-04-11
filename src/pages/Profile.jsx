@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuth } from "../hooks/useAuth";
 import UserCard from "../components/user/user-card/UserCard";
-import UpdateProfileInformation from "../forms/update-profile-information/UpdateProfileInformation";
+import UpdateProfileInformation from "../forms/UpdateProfileInformation";
 
 export default function Profile() {
   const currentUser = useAuth();

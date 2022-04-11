@@ -34,7 +34,7 @@ export default function ResumeCarousel(props) {
     <div className="resume-carousel-component">
       <Slider {...settings}>
         {jobs?.map((job) => (
-          <div className="resume-carousel-component__tile">
+          <div key={job} className="resume-carousel-component__tile">
             <JobTile {...job} />
           </div>
         ))}

@@ -42,7 +42,7 @@ export default function UserFacade(props) {
       <div className="row">
         {currentUsers?.map((user) => (
           // col-sm-12 col-md-4 col-lg-3
-          <div className="user-facade__col col-sm-6 col-md-4 col-lg-3 d-flex aligh-items-stretch">
+          <div key={user.userName} className="user-facade__col col-sm-6 col-md-4 col-lg-3 d-flex aligh-items-stretch">
             <UserCard {...user} />
           </div>
         ))}

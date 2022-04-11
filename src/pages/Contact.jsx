@@ -1,5 +1,5 @@
 import React from "react";
-import ContactMe from '../forms/contact-me/ContactMe'
+import ContactMe from '../forms/ContactMe'
 export default function Contact() {
   
 
