@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c708dcea-87d0-4598-95d8-3526a95eb161" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/app/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/banner/Banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/banner/Banner.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/resume-carousel/ResumeCarousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/resume-carousel/ResumeCarousel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user/user-card/UserCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/user-card/UserCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user/user-card/message-button/message-button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/user-card/message-button/message-button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user/user-facade/UserFacade.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/user-facade/UserFacade.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user/user-facade/UserFacade.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/user-facade/UserFacade.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/sign-up/SignUp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/sign-up/SignUp.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { UserContext } from "../../context/UserContext";
 import "./App.scss";
 
 // Global CSS Imports
@@ -26,17 +27,19 @@ export default function App() {
     <main>
       <React.StrictMode>
         <Router>
-          <Navbar />
-          <div className="page">
-            <Routes className="app">
-              <Route path="/" element={<Home {...HomeData} />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/resume" element={<Resume {...ResumeData} />} />
-              <Route path="/profile" element={<Profile />} />
-              <Route path="/users" element={<Users {...UsersData} />} />
-              <Route path="/*" element={<PageNotFound />} />
-            </Routes>
-          </div>
+          <UserContext.Provider value="testing">
+            <Navbar />
+            <div className="page">
+              <Routes className="app">
+                <Route path="/" element={<Home {...HomeData} />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/resume" element={<Resume {...ResumeData} />} />
+                <Route path="/profile" element={<Profile />} />
+                <Route path="/users" element={<Users {...UsersData} />} />
+                <Route path="/*" element={<PageNotFound />} />
+              </Routes>
+            </div>
+          </UserContext.Provider>
         </Router>
       </React.StrictMode>
     </main>

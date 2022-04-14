@@ -1,8 +1,9 @@
 import React, { useState, useRef } from "react";
 import { Button, Modal, Form, Alert } from "react-bootstrap";
-import { signup } from "../../../firebase";
+import { signup, createUserDocument, db } from "../../../firebase";
 import { useNavigate } from "react-router-dom";
 import "./SignUp.scss";
+import {collection, addDoc, Timestamp} from 'firebase/firestore'
 
 export default function SignUp() {
   const [show, setShow] = useState(false);
@@ -16,6 +17,7 @@ export default function SignUp() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  const userNameRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
   const passwordConfirmRef = useRef();
@@ -27,17 +29,29 @@ export default function SignUp() {
       try {
         setError("");
         setLoading(true);
-        await signup(emailRef.current.value, passwordRef.current.value);
+        console.log(userNameRef.current.value);
+        let userName = userNameRef.current.value;
+
+        const { user } = await signup(
+          emailRef.current.value,
+          passwordRef.current.value
+        );
+
+        console.log(user);
+
+        createUserDocument(user, userName);
+     
+
         handleClose();
         navigate("../profile", { replace: true });
-      } catch (error) {
-        console.log(error.message);
+      } catch (e) {
+        console.log(e.message);
 
-        if (error.message.includes("auth/invalid-email")) {
+        if (e.message.includes("auth/invalid-email")) {
           setError("Invalid Email");
-        } else if (error.message.includes("auth/weak-password")) {
+        } else if (e.message.includes("auth/weak-password")) {
           setError("Password should be at least 6 characters");
-        } else if (error.message.includes("auth/email-already-in-use")) {
+        } else if (e.message.includes("auth/email-already-in-use")) {
           setError("This email already has an account");
         } else {
           setError("Something Went Wrong ");
@@ -62,6 +76,14 @@ export default function SignUp() {
         <Modal.Body>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form>
+            <Form.Group className="mb-3" controlId="formGroupUserName">
+              <Form.Label>User Name</Form.Label>
+              <Form.Control
+                ref={userNameRef}
+                type="text"
+                placeholder="User name"
+              />
+            </Form.Group>
             <Form.Group className="mb-3" controlId="formGroupEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
