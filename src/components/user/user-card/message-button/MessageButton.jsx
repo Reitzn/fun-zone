@@ -12,7 +12,12 @@ export default function MessageButton() {
 
   return (
     <>
-      <Button className="message-button mt-auto align-self-start" variant="primary" onClick={handleShow}>
+      <Button
+        className="message-button mt-auto align-self-start"
+        data-testid="messageButton"
+        variant="primary"
+        onClick={handleShow}
+      >
         Message
       </Button>
 
@@ -24,22 +29,22 @@ export default function MessageButton() {
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Subject</Form.Label>
-              <Form.Control placeholder="Subject" />
+              <Form.Control data-testid="subject" placeholder="Subject" />
             </Form.Group>
             <Form.Group
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
             >
               <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows={3} />
+              <Form.Control as="textarea" rows={3} data-testid="message" />
             </Form.Group>
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" data-testid="close" onClick={handleClose}>
             Close
           </Button>
-          <Button data-testid="login-button" variant="primary">
+          <Button variant="primary" data-testid="submit">
             Send
           </Button>
         </Modal.Footer>

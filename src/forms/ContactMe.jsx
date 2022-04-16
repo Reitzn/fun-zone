@@ -11,12 +11,7 @@ export default function ContactMe() {
       e.stopPropagation();
     }
 
-    // DO WORK: Add stuff
-    // emailjs
-    //   .sendForm(
-    //
-    //   )
-    //   .catch((er) => console.log(er));
+    // Look into how to send me an email.
 
     setValidated(true);
   };
@@ -32,6 +27,7 @@ export default function ContactMe() {
               type="text"
               placeholder="Bob Ross"
               name={"name"}
+              data-testid="name"
             />
             <Form.Control.Feedback type="invalid">
               Please let me know who you are.
@@ -44,6 +40,7 @@ export default function ContactMe() {
               type="email"
               placeholder="name@example.com"
               name={"email"}
+              data-testid="email"
             />
             <Form.Control.Feedback type="invalid">
               Please enter an email so I can get back to you.
@@ -58,6 +55,7 @@ export default function ContactMe() {
               placeholder="Subject"
               required
               name={"subject"}
+              data-testid="subject"
             />
             <Form.Control.Feedback type="invalid">
               Please let me know what this is about.
@@ -66,12 +64,20 @@ export default function ContactMe() {
         </Row>
         <Form.Group className="mb-3" controlId="formGroupMessage">
           <Form.Label>Message</Form.Label>
-          <Form.Control as="textarea" rows={6} required name={"message"} />
+          <Form.Control
+            as="textarea"
+            rows={6}
+            required
+            name={"message"}
+            data-testid="message"
+          />
           <Form.Control.Feedback type="invalid">
             Don't spam my email.
           </Form.Control.Feedback>
         </Form.Group>
-        <Button type="submit">Send</Button>
+        <Button type="submit" data-testid="submit">
+          Send
+        </Button>
       </Form>
     </>
   );

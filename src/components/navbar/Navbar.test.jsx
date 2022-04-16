@@ -1,10 +1,10 @@
 import { render, screen, waitFor } from "@testing-library/react";
-import Navbar from "../Navbar";
+import Navbar from "./Navbar";
 import { BrowserRouter as Router } from "react-router-dom";
-import { useAuth } from "../../../hooks/useAuth";
+import { useAuth } from "../../hooks/useAuth";
 
-jest.mock("../../../hooks/useAuth");
-const mockUseAuth = (data) => {
+jest.mock("../../hooks/useAuth");
+const mockUseAuth = () => {
   useAuth.mockImplementation(() => {
     return {
       uid: "1234",
@@ -12,7 +12,7 @@ const mockUseAuth = (data) => {
   });
 };
 
-test("renders unauthenticatd  Navbar, proper buttons and tabs", async () => {
+test("renders unauthenticatd  Navbar, Login and Sign Up buttons", async () => {
   render(
     <Router>
       <Navbar />
@@ -28,7 +28,7 @@ test("renders unauthenticatd  Navbar, proper buttons and tabs", async () => {
   });
 });
 
-test("renders authenticatd  Navbar, proper buttons and tabs", async () => {
+test("renders authenticatd  Navbar, Profile, Users, Log Out buttons", async () => {
   mockUseAuth();
   render(
     <Router>
