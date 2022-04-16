@@ -30,17 +30,15 @@ export default function SignUp() {
         await signup(emailRef.current.value, passwordRef.current.value);
         handleClose();
         navigate("../profile", { replace: true });
-      } catch (error) {
-        console.log(error.message);
-
-        if (error.message.includes("auth/invalid-email")) {
+      } catch (e) {
+        if (e.message.includes("auth/invalid-email")) {
           setError("Invalid Email");
-        } else if (error.message.includes("auth/weak-password")) {
+        } else if (e.message.includes("auth/weak-password")) {
           setError("Password should be at least 6 characters");
-        } else if (error.message.includes("auth/email-already-in-use")) {
+        } else if (e.message.includes("auth/email-already-in-use")) {
           setError("This email already has an account");
         } else {
-          setError("Something Went Wrong ");
+          setError("Something Went Wrong");
         }
       }
       setLoading(false);
@@ -51,7 +49,12 @@ export default function SignUp() {
 
   return (
     <>
-      <Button className="sign-up-button" variant="primary" onClick={handleShow}>
+      <Button
+        className="sign-up-button"
+        data-testid="signUp"
+        variant="primary"
+        onClick={handleShow}
+      >
         Sign Up
       </Button>
 
@@ -65,6 +68,7 @@ export default function SignUp() {
             <Form.Group className="mb-3" controlId="formGroupEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
+                data-testid="emailAddress"
                 type="email"
                 ref={emailRef}
                 placeholder="Enter email"
@@ -73,6 +77,7 @@ export default function SignUp() {
             <Form.Group className="mb-3" controlId="formGroupPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control
+                data-testid="password"
                 type="password"
                 ref={passwordRef}
                 placeholder="Password"
@@ -81,6 +86,7 @@ export default function SignUp() {
             <Form.Group className="mb-3" controlId="formGroupConfirmPassword">
               <Form.Label>Confirm password</Form.Label>
               <Form.Control
+                data-testid="passwordTwo"
                 type="password"
                 ref={passwordConfirmRef}
                 placeholder="Password"
@@ -89,10 +95,19 @@ export default function SignUp() {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button
+            variant="secondary"
+            data-testid="close"
+            onClick={handleClose}
+          >
             Close
           </Button>
-          <Button variant="primary" disabled={loading} onClick={handleSignup}>
+          <Button
+            variant="primary"
+            data-testid="submit"
+            disabled={loading}
+            onClick={handleSignup}
+          >
             Sign Up
           </Button>
         </Modal.Footer>

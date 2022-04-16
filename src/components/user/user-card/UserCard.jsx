@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import './UserCard.scss';
-import MessageButton from './message-button/message-button';
+import MessageButton from './message-button/MessageButton';
 
 export default function UserCard(props) {
     const { userName, profileImage, profileImageAltText, profileDescription } = props;

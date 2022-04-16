@@ -22,7 +22,6 @@ export default function Login() {
   const navigate = useNavigate();
 
   async function handleLogin() {
-
     try {
       setError("");
       setLoading(true);
@@ -30,23 +29,26 @@ export default function Login() {
       handleClose();
       navigate("../profile", { replace: true });
     } catch (er) {
-      
-      console.log(er.message);
-      
-        if (er.message.includes('auth/invalid-email')) {
-          setError("Invalid Email");
-        } else if (er.message.includes('auth/wrong-password')) {
-          setError("Wrong Password");
-        } else {
-          setError("Login Error");
-        }
+      if (er.message.includes("auth/invalid-email")) {
+        setError("Invalid Email");
+      } else if (er.message.includes("auth/wrong-password")) {
+        setError("Wrong Password");
+      } else {
+        setError("Login Error");
+        // Look into firebase logs.
+      }
     }
     setLoading(false);
   }
 
   return (
     <>
-      <Button className="login-button" variant="primary" onClick={handleShow}>
+      <Button
+        className="login-button"
+        variant="primary"
+        onClick={handleShow}
+        data-testid="login"
+      >
         Login
       </Button>
 
@@ -63,6 +65,7 @@ export default function Login() {
                 type="email"
                 ref={emailRef}
                 placeholder="Enter email"
+                data-testid="emailAddress"
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formGroupPassword">
@@ -71,19 +74,24 @@ export default function Login() {
                 type="password"
                 ref={passwordRef}
                 placeholder="Password"
+                data-testid="password"
               />
             </Form.Group>
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button
+            variant="secondary"
+            data-testid="close"
+            onClick={handleClose}
+          >
             Close
           </Button>
           <Button
-            data-testid="login-button"
             variant="primary"
             disabled={loading}
             onClick={handleLogin}
+            data-testid="submit"
           >
             Login
           </Button>
