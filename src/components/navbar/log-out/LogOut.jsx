@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "react-bootstrap";
 import { logout } from "../../../firebase";
 import { Link } from "react-router-dom";
